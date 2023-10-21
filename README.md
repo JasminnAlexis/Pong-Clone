@@ -1,6 +1,6 @@
 # Pong-Clone
 A modern clone of the classic Pong game, developed for learning and educational purposes on  my end.
-a pong game in html, css and javascript. feel free to take it and edit it or use it for your own learning - not for distribution.
+a pong game in html, css and javascript. feel free to take it and edit it or use it.
 
 Single Player Mode: Play against an AI opponent whose espeed increases over time.
 Two Player Mode: Challenge a friend in a local 2-player match.
