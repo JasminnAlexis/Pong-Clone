@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+canvas {
+    border: 1px solid #CC3F63;
+    resize: none; 
+    max-width: 100%; 
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    flex-direction: column;  /* Stack children vertically */
+}
+
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 15px; 
+    border: 2px solid #CC3F63; /* Pink border */
+    background-color: transparent; /* Transparent background */
+    color: #CC3F63; /* Pink text color */
+    border-radius: 50px; /* Rounded corners */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Bubble-like font */
+    transition: 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #CC3F63; /* Pink background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;  /* Adjust this value for spacing between the button group and the Quit button */
+}
+
+
+#titleScreen {
+    background-image: url('images/pong-title.png');
+    background-size: contain; /* This will make sure the image scales proportionally */
+    background-repeat: no-repeat;
+    background-position: center center; /* This will center the image */
+    width: 100vw;  /* Use viewport width units */
+    height: 80vh;  /* Use viewport height units */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center; /* Horizontally center the play button */
+    align-items: center; /* Vertically center the play button */
+}
+
+#playBtn {
+    z-index: 1; /* Ensure the button is above the background image */
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border: 2px solid #CC3F63; /* Pink border */
+    background-color: white; /* White background */
+    color: #CC3F63; /* Pink text color */
+    border-radius: 50px; /* Rounded corners */
+    transition: 0.3s; /* Smooth transition for hover effect */
+    font-family: 'Pacifico', cursive; /* Bubble letter font */
+}
+
+#playBtn:hover {
+    background-color: #CC3F63; /* Pink background on hover */
+    color: #fff; /* White text on hover */
+}
+
+#backToHome {
+    margin-top: 10px;  /* Adjust this value as needed */
+}
+
+

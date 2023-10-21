@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="audioContainer">
+        <audio id="backgroundMusic" loop>
+            <source src="SFX\eight-bit-music-1.mp3" type="audio/mpeg">
+        </audio>
+    </div>    
+    <div id="titleScreen" class="overlay">
+        <button id="playBtn">Play</button>
+    </div>       
+    <div id="startMenu" class="overlay" style="display: none;">
+        <div class="button-group">
+            <button id="onePlayerBtn">1-Player</button>
+            <button id="twoPlayerBtn">2-Player</button>
+        </div>
+        <button id="backToHome">Quit</button>
+    </div>
+    
+    
+
+    <div id="gameOverMenu" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.8); padding: 20px; border-radius: 10px;">
+        <h2 id="highScoreMessage" style="color: #fff; text-align: center;"></h2>
+        <h2 id="gameOverMessage" style="color: #fff; text-align: center;"></h2>
+        <h3 id="currentScoreMessage" style="color: #fff; text-align: center;"></h3>
+        <button id="playAgainBtn" style="display: block; margin: 10px auto;">Play Again</button>
+        <button id="returnToMenuBtn" style="display: block; margin: 10px auto;">Return to Menu</button>
+    </div>  
+        <canvas id="pongCanvas" width="800" height="400"></canvas>  
+
+    <script src="utils.js"></script>
+    <script src="audioManager.js"></script>
+    <script src="script.js"></script>
+    <script src="gameObjects.js"></script>
+    <script src="drawing.js"></script>
+    <script src="eventHandlers.js"></script>
+
+
+
+
+</body>
+</html>
+
