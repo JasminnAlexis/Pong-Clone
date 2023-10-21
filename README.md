@@ -24,3 +24,6 @@ Enjoy the game!
 
 Credits:
 Game and sound effects developed by JasminnAlexis.
+
+Gameplay Links:
+https://clipchamp.com/watch/xDtHXicRRnw
